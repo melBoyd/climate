@@ -1,3 +1,3 @@
 # Just an example
 
-Adding a test
+adding a test
