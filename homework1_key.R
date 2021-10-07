@@ -1,4 +1,8 @@
 
+library(lubridate)
+library(tidyverse)
+
+
 # Select station level data:
 
 stations <- 
@@ -28,6 +32,4 @@ observations <-
       sep = ':') %>% 
     mutate_at(
       vars(precip:temp_max),
-      ~as.numeric(.)) %>% 
-    mutate(date = lubridate::as_date(date))
-  
+      ~as.numeric(.))
